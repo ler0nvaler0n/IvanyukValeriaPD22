@@ -1,4 +1,5 @@
-﻿using System;
+//Перевірити істинність вислову:"Серед трьох даних цілих чисел є хоча б одна пара співпадаючих"
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
