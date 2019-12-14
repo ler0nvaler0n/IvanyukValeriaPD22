@@ -1,0 +1,74 @@
+﻿//Перевірити істинність вислову: 'Серед трьох даних цілих чисел є хоч би одна пара співпадаючих'.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace lab4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i, n, min, max;
+            do
+            {
+                Console.WriteLine("Input n:");
+                int.TryParse(Console.ReadLine(), out n);
+            } while (n < 1);
+            int[] a = new int[n];
+            for (i = 0; i < n; i++)
+            {
+                Console.WriteLine("Input a[{0}]:", i + 1);
+                int.TryParse(Console.ReadLine(), out a[i]);
+            }
+
+            for (i = 0; i < n; i++)
+            {
+                Console.WriteLine("a[{0}]: {1}", i + 1, a[i]);
+            }
+
+            max = a[0];
+            //min = a[0];
+            for (i = 1; i < n; i++)
+            {
+                if (a[i] > max)
+                {
+                    max = a[i];
+                }
+                // if (a[i] <min)
+                // {
+                //      min = a[i];
+                // }
+            }
+
+            Console.WriteLine("\nMax={0}\n", max);
+            // Console.WriteLine("Min={0}\n", min);
+
+
+            for (i = 0; i < n; i++)
+            {
+                //if (a[i] > 0)
+                //{
+                // a[i] = min;
+                //}
+                if (a[i] < 0)
+                {
+                    a[i] = max;
+                }
+            }
+
+
+
+            for (i = 0; i < n; i++)
+            {
+                Console.WriteLine("a[{0}]: {1}", i + 1, a[i]);
+            }
+
+            Console.ReadKey();
+
+        }
+    }
+}
