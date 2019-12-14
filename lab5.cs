@@ -1,4 +1,5 @@
-﻿using System;
+// Дан масив з N цілих чисел. Замінити всі додатні числа в масиві на максимальний елемент.﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
