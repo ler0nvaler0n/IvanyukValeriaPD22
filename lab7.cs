@@ -8,17 +8,6 @@ namespace lab7
 {
     class Program
     {
-        //static void SwapNum(int num)
-        //{
-        //    string str;
-        //    str = num.ToString();
-        //    for (int j = str.Length - 1; j >= 0; j--)
-        //    {
-        //        Console.Write(str[j]);
-        //    }
-        //    Console.WriteLine("\n");
-        //}
-
         static void SwapNum(int num, int counter)
         {
             string str;
@@ -32,16 +21,6 @@ namespace lab7
             }
         }
 
-
-        //static void SwapStr(string str)
-        //{
-        //    for (int j = str.Length - 1; j >= 0; j--)
-        //    {
-        //        Console.Write(str[j]);
-        //    }
-        //    Console.WriteLine("\n");
-        //}
-
         static void SwapStr(string str, int counter)
         {
 
@@ -54,25 +33,7 @@ namespace lab7
             }
         }
 
-        //static void SwapNum(float num2)
-        //{
-
-        //    string[] str = num2.ToString().Split(',','.');
-        //    int j = str.Length;
-
-        //    for (j = str[0].Length - 1; j >= 0; j--)
-        //    {
-        //        Console.Write(str[0][j]);
-        //    }
-        //    Console.Write(",");
-        //    for (j = str[1].Length - 1; j >= 0; j--)
-        //    {
-        //        Console.Write(str[1][j]);
-        //    }
-
-        //    Console.WriteLine("\n");
-        //}
-
+        
         static void SwapNum(float num2, int counter, int counter2)
         {
 
@@ -99,24 +60,7 @@ namespace lab7
             }
         }
 
-        //static void SwapNum(string str)
-        //{
-
-        //    string[] str2 = str.Split(',', '.');
-        //    int j = str2.Length;
-
-        //    for (j = str2[0].Length - 1; j >= 0; j--)
-        //    {
-        //        Console.Write(str2[0][j]);
-        //    }
-        //    Console.Write(",");
-        //    for (j = str2[1].Length - 1; j >= 0; j--)
-        //    {
-        //        Console.Write(str2[1][j]);
-        //    }
-
-        //    Console.WriteLine("\n");
-        //}
+        
 
         static void SwapStr(string str2, int counter, int counter2)
         {
